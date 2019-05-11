@@ -248,7 +248,7 @@ const validate = async function (decoded, request) {
 
 const init = async () => {
   const server = new Hapi.Server({ port: 8000 });
-  // include our module here ‚Üì‚Üì
+  // include our module here
   await server.register(require('hapi-auth-jwt2'));
 
   server.auth.strategy('jwt', 'jwt',
