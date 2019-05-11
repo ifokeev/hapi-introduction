@@ -1,4 +1,4 @@
-hapi is a battle-tested, full-featured, framework for building web applications and services with Node.js. With integrated support for essentials like authentication, caching and validation, and a powerful plugin system, hapi is ideal for projects and teams of any size.
+[hapi](https://hapijs.com) is a battle-tested, full-featured, framework for building web applications and services with Node.js. With integrated support for essentials like authentication, caching and validation, and a powerful plugin system, hapi is ideal for projects and teams of any size.
 
 This course will introduce hapi and guide you through some of hapi‚Äôs core features.
 
@@ -7,7 +7,7 @@ At the end you'll be able to program basic hapi app and deploy it to `now.sh`.
 
 # Getting Started
 
-Let‚Äôs start off by creating a new project and install hapi. Run the following in your terminal to get started:
+Let's start off by creating a new project and install hapi. Run the following in your terminal to get started:
 
 ```
 # Create a new directory for the project
@@ -29,7 +29,7 @@ $ npm i nodemon -g
 $ nodemon index.js
 ```
 
-We‚Äôre making use of nodemon to start our server in watch mode.
+We're making use of nodemon to start our server in watch mode.
 
 The first thing we need to do is create a server. Thankfully, this is easy with Node.js!
 
@@ -105,7 +105,7 @@ The `handler` function performs the main business logic of the route and sets th
 
 ## Parameters
 
-We‚Äôre also able to take this further with the request and h parameters. Let‚Äôs add the ability to pass parameters into our URL:
+We're also able to take this further with the request and h parameters. Let's add the ability to pass parameters into our URL:
 
 ```
 # index.js
@@ -144,17 +144,17 @@ process.on('unhandledRejection', (err) => {
 init();
 ```
 
-In our small example, we‚Äôre imagining that we have an API that returns a particular product. Whenever the user requests `http://localhost:3000/123`, they‚Äôll get back:
+In our small example, we're imagining that we have an API that returns a particular product. Whenever the user requests `http://localhost:3000/123`, they'll get back:
 
 ```
 Product ID: 123
 ```
 
-This is because the `request.params` object contains any params that we‚Äôve set-up in our path.
+This is because the `request.params` object contains any params that we've set-up in our path.
 
 Notice that we surrounded the `id` inside of two braces: `{id}`, this tells hapi that we intend for a user to replace that part of the URL as a param.
 
-At the same time, we also kept the original route _without_ the `id`. This shows that we can have multiple routes that target a similar base pattern and they won‚Äôt override one another. Each one gets more specific, and if it doesn‚Äôt match a particular route, it‚Äôll look back in the stack until one is matched.
+At the same time, we also kept the original route _without_ the `id`. This shows that we can have multiple routes that target a similar base pattern and they won't override one another. Each one gets more specific, and if it doesn't match a particular route, it'll look back in the stack until one is matched.
 
 
 ## Plugins
