@@ -1,6 +1,6 @@
 [hapi](https://hapijs.com) is a battle-tested, full-featured, framework for building web applications and services with Node.js. With integrated support for essentials like authentication, caching and validation, and a powerful plugin system, hapi is ideal for projects and teams of any size.
 
-This course will introduce hapi and guide you through some of hapi‚Äôs core features.
+This course will introduce hapi and guide you through some of hapi's core features.
 
 At the end you'll be able to program basic hapi app and deploy it to `now.sh`.
 
